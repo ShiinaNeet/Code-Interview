@@ -6,8 +6,7 @@ const Modal = ({
   closeModal,
   fullName,
   setFullName,
-  result,
-  setResult,
+
   handleUpdate,
 }) => {
   return (
@@ -18,20 +17,12 @@ const Modal = ({
             <Dialog.Title className="text-md font-bold text-gray-800">
               Update Full Name
             </Dialog.Title>
-
             <input
               type="text"
               value={fullName}
               onChange={(e) => setFullName(e.target.value)}
               className="mt-3 w-full rounded-md border px-4 py-2 focus:ring-2 focus:ring-blue-400"
               placeholder="Enter new full name"
-            />
-            <input
-              value={result}
-              onChange={(e) => setResult(e.target.value)}
-              className="mt-3 w-full rounded-md border px-4 py-2 focus:ring-2 focus:ring-blue-400"
-              placeholder="Enter new result"
-              type="number"
             />
             <div className="mt-4 flex justify-end space-x-2">
               <button

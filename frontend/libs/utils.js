@@ -26,9 +26,9 @@ export const addUser = async (fullName, result) => {
     });
 };
 
-export const updateUser = async (id, fullName, result) => {
+export const updateUser = async (id, fullName) => {
   await axios
-    .put(`${API_URL}/${id}`, { full_name: fullName, result: result })
+    .put(`${API_URL}/${id}`, { full_name: fullName })
     .then((response) => {
       return response.data;
     })

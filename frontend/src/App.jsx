@@ -57,16 +57,16 @@ function App() {
   };
   const handleUpdate = async () => {
     if (editId !== null) {
-      console.log("Updating user...", editId, fullName, editResult);
-      await updateUser(editId, fullName, editResult);
+      console.log("Updating user...", editId, fullName);
+      await updateUser(editId, fullName);
       setIsModalOpen(false);
       fetchUsers();
     }
   };
-  const openModal = (id, name, result) => {
+  const openModal = (id, name) => {
     setEditId(id);
     setFullName(name);
-    setEditResult(result);
+
     setIsModalOpen(true);
   };
   const closeModal = () => {
@@ -159,9 +159,7 @@ function App() {
                     <td className="px-4 py-3">{user.result}</td>
                     <td className="flex justify-center space-x-2 px-4 py-3">
                       <button
-                        onClick={() =>
-                          openModal(user.id, user.full_name, user.result)
-                        }
+                        onClick={() => openModal(user.id, user.full_name)}
                         className="cursor-pointer rounded-sm bg-yellow-300 px-3 py-1 text-black transition hover:bg-yellow-400"
                       >
                         Edit
@@ -190,8 +188,6 @@ function App() {
         isOpen={isModalOpen}
         closeModal={closeModal}
         fullName={fullName}
-        result={editResult}
-        setResult={setEditResult}
         setFullName={setFullName}
         handleUpdate={handleUpdate}
       />

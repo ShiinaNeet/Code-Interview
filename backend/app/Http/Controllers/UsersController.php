@@ -35,7 +35,7 @@ class UsersController extends Controller
     public function update(Request $request, string $id)
     {
         $user = User::findOrFail($id);
-        $user->update(['full_name' => $request->full_name, 'result' => $request->result]);
+        $user->update(['full_name' => $request->full_name]);
         
         return response()->json($user, 200);
     }
