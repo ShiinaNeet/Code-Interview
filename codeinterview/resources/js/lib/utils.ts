@@ -10,10 +10,10 @@ const API_URL = 'http://localhost:8000/api/users';
 export const getUsers = async () => {
     try {
         const response = await axios.get(API_URL);
-        return response.data; // ✅ Now `getUsers()` returns an array
+        return response.data;
     } catch (error) {
         console.error('Error fetching users:', error);
-        return []; // ✅ Always return an array
+        return [];
     }
 };
 
