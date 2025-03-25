@@ -42,6 +42,7 @@ function App() {
     // Validate full name
     if (!/^[a-zA-Z\s]+$/.test(fullName)) {
       console.error("Invalid name! Only letters allowed.");
+      alert("Invalid name! Only letters allowed.");
       return;
     }
     if (editId) {
