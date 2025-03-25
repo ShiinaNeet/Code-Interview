@@ -1,7 +1,5 @@
 # React Laravel Web App
 
-
-
 ## API Endpoints
 
 | Method | Endpoint          | Description                                |
@@ -15,16 +13,16 @@
 
 1. Open the frontend at `http://localhost:5173`
 2. Enter numbers and operation.
-![image](https://github.com/user-attachments/assets/a7d1238d-2e2a-4fde-9214-38d365478b84)
+   ![image](https://github.com/user-attachments/assets/a7d1238d-2e2a-4fde-9214-38d365478b84)
 
 3. Enter a full name and click **Add Name**.
-  ![image](https://github.com/user-attachments/assets/198aa941-fb3b-4744-ad65-e46beec4887a)
+   ![image](https://github.com/user-attachments/assets/198aa941-fb3b-4744-ad65-e46beec4887a)
 
-4. Use **Edit** to update the name and result.
+4. Use **Edit** to update the name.
    ![image](https://github.com/user-attachments/assets/12c0747e-4ee9-4aeb-954f-0926206ad972)
 5. Use **Delete** to remove a user from the list.
    ![image](https://github.com/user-attachments/assets/42537e0b-6f66-45bf-a4a7-0026e9a62c66)
-   
+
 ## Tech Stack
 
 ### Frontend
@@ -96,6 +94,7 @@ or composer run dev
 ```
 
 Backend will run at `http://127.0.0.1:8000`
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
